@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flask Base Template</title>
+  <link href="/static/base.css" rel="stylesheet" type="text/css">
+  <link href="/static/app.css" rel="stylesheet" type="text/css">
+  <script src="/static/app.js"></script>
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=640, initial-scale=1">
+</head>
+
+<body>
+<div id="header">
+  {% block header %}
+  <h1>Flask Base Template</h1>
+  {% endblock %}
+</div>
+
+<div id="nav">
+  {% block nav %}
+  <a href="/">Home</a>
+  {% endblock %}
+</div>
+
+<div id="content">
+  {% block content %}
+  <p>default content</p>
+  {% endblock %}
+</div>
+</body>
+</html>
