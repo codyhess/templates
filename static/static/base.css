@@ -1,0 +1,17 @@
+body {
+  width: 40em;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#header, #nav { text-align: center; }
+
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+}
+@media (min-width: 641px) and (max-width: 1400px) {
+  body { font-size: 24px; }
+}
+@media (min-width: 1401px) {
+  body { font-size: 32px; }
+}
